@@ -36,3 +36,19 @@ Route::get('/main/', function () {
 Route::get('/subone/', function () {
     return view('subone');
 });
+
+Route::get('/print-values/', function () {
+    return view('printvalues');
+});
+
+Route::get('/ssp/', function () {
+    return view('my/parentshowstop');
+});
+
+Route::get('/vp/', function () {
+
+    $product = array("Shirt", 1200,  "XL", 1234);
+
+    return view('variables/variables', array('p' => $product) );
+
+});
