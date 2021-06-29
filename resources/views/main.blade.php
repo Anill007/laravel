@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My site</title>
     <link rel="stylesheet" href={{ asset('/css/style.css') }}>
-    <link rel="stylesheet" href={{ asset('/css/style1.css') }}>
+    <link rel="stylesheet" href={{ asset('/css/style2.css') }}>
 </head>
 <body>
 
@@ -19,9 +19,11 @@
     </div>
 
     <div>
-        @section('replacable')
-        <h3>This can be altered.</h3>
-        @stop
+        {{-- parent maa @show use garnu --}}
+        {{-- child maa @stop or @endsection junai vaye ne use garnu --}}
+        @section('replace')
+        <h3>PRINTED FROM PARENT</h3>
+        @show
     </div>
 
     <div>
